@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from '@/lib/router-compat';
+import { useNavigate } from '@/lib/router-compat';
 import { Smartphone, Lock } from 'lucide-react';
 import { useStore } from '../lib/store';
 import { APP_LOGO } from '../lib/brand';

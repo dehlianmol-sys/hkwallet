@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import Landing from "@/pages/Landing";
+import Home from "@/pages/Home";
+import UserLayout from "@/components/UserLayout";
+import { Navigate } from "@/lib/router-compat";
+import { useStore } from "@/lib/store";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  ssr: false,
+  head: () => ({
+    meta: [
+      { title: "Vivrapay — Earn Money Online With Easy Tasks" },
+      {
+        name: "description",
+        content:
+          "Download Vivrapay, complete simple tasks, get fast UPI withdrawals and earn referral rebates every day.",
+      },
+      { property: "og:title", content: "Vivrapay — Earn Money Online With Easy Tasks" },
+      {
+        property: "og:description",
+        content: "Download Vivrapay, complete simple tasks and earn referral rebates every day.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: RootEntry,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function RootEntry() {
+  const { currentUser, loading } = useStore();
+
+  if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-white">
+        <div className="h-10 w-10 animate-spin rounded-full border-4 border-gray-200 border-t-[#2b8cff]" />
+      </div>
+    );
+  }
+
+  if (!currentUser) return <Landing />;
+  if (currentUser.role !== "user") return <Navigate to="/admin" />;
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <UserLayout>
+      <Home />
+    </UserLayout>
   );
 }

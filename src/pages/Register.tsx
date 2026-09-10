@@ -65,7 +65,7 @@ export default function Register() {
           <img
             src={APP_LOGO}
             alt="HK Wallet Logo"
-            className="w-[34vw] max-w-[150px] h-auto object-contain mb-6 brightness-0 invert"
+            className="w-[34vw] max-w-[150px] h-auto object-contain mb-6"
           />
           <h1 className="text-[26px] font-extrabold leading-tight">Create your account</h1>
           <p className="text-[13px] text-white/70 mt-1">Join and get your signup bonus instantly</p>

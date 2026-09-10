@@ -117,11 +117,9 @@ export default function Login() {
             </label>
           </div>
 
+          {/* Registration happens on the website only — the app shows login alone. */}
           <p className="text-center text-sm text-gray-500 mt-8">
-            If you have not registered,{' '}
-            <Link to="/register" className="text-[#62007a] font-semibold no-underline">
-              Register Here
-            </Link>
+            New here? Sign up on hkwallet.site using your invite link.
           </p>
         </div>
       </div>

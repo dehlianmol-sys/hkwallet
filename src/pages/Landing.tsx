@@ -1,4 +1,4 @@
-import { APK_URL, APP_LOGO } from '../lib/brand';
+import { APK_URL, APP_LOGO, APP_NAME, APP_TAGLINE } from '../lib/brand';
 
 /* Styles copied verbatim from the supplied Vivrapay landing page, scoped to .lp */
 const CSS = `
@@ -50,10 +50,10 @@ export default function Landing() {
       <div className="lp">
         <div className="header">
           <div className="logo-section">
-            <img src={APP_LOGO} alt="Vivra Pay Logo" className="logo-img" />
+            <img src={APP_LOGO} alt={`${APP_NAME} logo`} className="logo-img" />
             <div className="logo-text">
-              <span className="logo-title">Vivra Pay</span>
-              <span className="logo-subtitle">Earn Money Online</span>
+              <span className="logo-title">{APP_NAME}</span>
+              <span className="logo-subtitle">{APP_TAGLINE}</span>
             </div>
           </div>
           <a href={APK_URL} className="btn-download">
@@ -186,18 +186,18 @@ export default function Landing() {
             <div className="info-block-header">Recharge rebate</div>
             <div className="levels-grid">
               <div className="level-card level-a">
-                <span className="level-name">level A</span>
-                <span className="level-badge">20%</span>
+                <span className="level-name">Level 1</span>
+                <span className="level-badge">5%</span>
                 <span className="level-footer">Profit Ratio</span>
               </div>
               <div className="level-card level-b">
-                <span className="level-name">level B</span>
-                <span className="level-badge">15%</span>
+                <span className="level-name">Level 2</span>
+                <span className="level-badge">0.3%</span>
                 <span className="level-footer">Profit Ratio</span>
               </div>
               <div className="level-card level-c">
-                <span className="level-name">level C</span>
-                <span className="level-badge">10%</span>
+                <span className="level-name">Level 3</span>
+                <span className="level-badge">0.1%</span>
                 <span className="level-footer">Profit Ratio</span>
               </div>
             </div>

@@ -39,7 +39,15 @@ function RootEntry() {
     );
   }
 
-  if (!currentUser) return <Landing />;
+  if (!currentUser) {
+    // Referral visits go straight to the web registration page.
+    const ref =
+      typeof window === "undefined"
+        ? null
+        : new URLSearchParams(window.location.search).get("ref");
+    if (ref) return <Navigate to={`/register?ref=${encodeURIComponent(ref)}`} replace />;
+    return <Landing />;
+  }
   if (currentUser.role !== "user") return <Navigate to="/admin" />;
 
   return (

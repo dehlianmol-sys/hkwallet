@@ -10,16 +10,16 @@ export const Route = createFileRoute("/")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Vivrapay — Earn Money Online With Easy Tasks" },
+      { title: "Hkwallet — Earn Money Online With Easy Tasks" },
       {
         name: "description",
         content:
-          "Download Vivrapay, complete simple tasks, get fast UPI withdrawals and earn referral rebates every day.",
+          "Download Hkwallet, complete simple tasks, get fast UPI withdrawals and earn referral rebates every day.",
       },
-      { property: "og:title", content: "Vivrapay — Earn Money Online With Easy Tasks" },
+      { property: "og:title", content: "Hkwallet — Earn Money Online With Easy Tasks" },
       {
         property: "og:description",
-        content: "Download Vivrapay, complete simple tasks and earn referral rebates every day.",
+        content: "Download Hkwallet, complete simple tasks and earn referral rebates every day.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

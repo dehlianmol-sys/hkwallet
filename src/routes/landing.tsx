@@ -6,15 +6,15 @@ export const Route = createFileRoute("/landing")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Download Vivrapay — Earn Money Online" },
+      { title: "Download Hkwallet — Earn Money Online" },
       {
         name: "description",
-        content: "Get the Vivrapay app, complete easy tasks and withdraw earnings instantly by UPI.",
+        content: "Get the Hkwallet app, complete easy tasks and withdraw earnings instantly by UPI.",
       },
-      { property: "og:title", content: "Download Vivrapay — Earn Money Online" },
+      { property: "og:title", content: "Download Hkwallet — Earn Money Online" },
       {
         property: "og:description",
-        content: "Get the Vivrapay app, complete easy tasks and withdraw earnings instantly by UPI.",
+        content: "Get the Hkwallet app, complete easy tasks and withdraw earnings instantly by UPI.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

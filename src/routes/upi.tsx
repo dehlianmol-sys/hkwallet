@@ -8,10 +8,10 @@ export const Route = createFileRoute("/upi")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "UPI Tools — Vivrapay" },
-      { name: "description", content: "Manage your linked UPI accounts and buy or sell orders on Vivrapay." },
-      { property: "og:title", content: "UPI Tools — Vivrapay" },
-      { property: "og:description", content: "Manage your linked UPI accounts and buy or sell orders on Vivrapay." },
+      { title: "UPI Tools — Hkwallet" },
+      { name: "description", content: "Manage your linked UPI accounts and buy or sell orders on Hkwallet." },
+      { property: "og:title", content: "UPI Tools — Hkwallet" },
+      { property: "og:description", content: "Manage your linked UPI accounts and buy or sell orders on Hkwallet." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

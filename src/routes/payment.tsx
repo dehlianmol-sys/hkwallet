@@ -8,10 +8,10 @@ export const Route = createFileRoute("/payment")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Complete Payment — Vivrapay" },
-      { name: "description", content: "Finish your pending Vivrapay deposit and upload the payment receipt." },
-      { property: "og:title", content: "Complete Payment — Vivrapay" },
-      { property: "og:description", content: "Finish your pending Vivrapay deposit and upload the payment receipt." },
+      { title: "Complete Payment — Hkwallet" },
+      { name: "description", content: "Finish your pending Hkwallet deposit and upload the payment receipt." },
+      { property: "og:title", content: "Complete Payment — Hkwallet" },
+      { property: "og:description", content: "Finish your pending Hkwallet deposit and upload the payment receipt." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

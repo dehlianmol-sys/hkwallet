@@ -8,10 +8,10 @@ export const Route = createFileRoute("/team")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "My Team — Vivrapay" },
-      { name: "description", content: "Track your referrals, team size and commission earnings on Vivrapay." },
-      { property: "og:title", content: "My Team — Vivrapay" },
-      { property: "og:description", content: "Track your referrals, team size and commission earnings on Vivrapay." },
+      { title: "My Team — Hkwallet" },
+      { name: "description", content: "Track your referrals, team size and commission earnings on Hkwallet." },
+      { property: "og:title", content: "My Team — Hkwallet" },
+      { property: "og:description", content: "Track your referrals, team size and commission earnings on Hkwallet." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

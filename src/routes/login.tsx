@@ -7,10 +7,10 @@ export const Route = createFileRoute("/login")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Login — Vivrapay" },
-      { name: "description", content: "Sign in to your Vivrapay wallet to manage deposits and rewards." },
-      { property: "og:title", content: "Login — Vivrapay" },
-      { property: "og:description", content: "Sign in to your Vivrapay wallet." },
+      { title: "Login — Hkwallet" },
+      { name: "description", content: "Sign in to your Hkwallet wallet to manage deposits and rewards." },
+      { property: "og:title", content: "Login — Hkwallet" },
+      { property: "og:description", content: "Sign in to your Hkwallet wallet." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

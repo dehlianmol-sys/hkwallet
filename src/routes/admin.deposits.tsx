@@ -7,8 +7,8 @@ export const Route = createFileRoute("/admin/deposits")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Deposit Logs — Vivrapay Admin" },
-      { name: "description", content: "Deposit Logs in the Vivrapay admin console." },
+      { title: "Deposit Logs — Hkwallet Admin" },
+      { name: "description", content: "Deposit Logs in the Hkwallet admin console." },
       { name: "robots", content: "noindex" },
     ],
   }),

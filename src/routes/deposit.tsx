@@ -8,10 +8,10 @@ export const Route = createFileRoute("/deposit")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Deposit — Vivrapay" },
-      { name: "description", content: "Add funds to your Vivrapay wallet with UPI in seconds." },
-      { property: "og:title", content: "Deposit — Vivrapay" },
-      { property: "og:description", content: "Add funds to your Vivrapay wallet with UPI in seconds." },
+      { title: "Deposit — Hkwallet" },
+      { name: "description", content: "Add funds to your Hkwallet wallet with UPI in seconds." },
+      { property: "og:title", content: "Deposit — Hkwallet" },
+      { property: "og:description", content: "Add funds to your Hkwallet wallet with UPI in seconds." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

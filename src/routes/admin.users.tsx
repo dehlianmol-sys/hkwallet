@@ -7,8 +7,8 @@ export const Route = createFileRoute("/admin/users")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "User Ledger — Vivrapay Admin" },
-      { name: "description", content: "User Ledger in the Vivrapay admin console." },
+      { title: "User Ledger — Hkwallet Admin" },
+      { name: "description", content: "User Ledger in the Hkwallet admin console." },
       { name: "robots", content: "noindex" },
     ],
   }),

@@ -1,6 +1,6 @@
 import { APK_URL, APP_LOGO, APP_NAME, APP_TAGLINE } from '../lib/brand';
 
-/* Styles copied verbatim from the supplied Vivrapay landing page, scoped to .lp */
+/* Styles copied verbatim from the supplied Hkwallet landing page, scoped to .lp */
 const CSS = `
 .lp-body { background:#0b1e4f; display:flex; justify-content:center; align-items:flex-start; min-height:100dvh; color:#fff; }
 .lp { width:100%; max-width:450px; background:linear-gradient(180deg,#124ec3 0%,#0b3499 100%); min-height:100dvh; display:flex; flex-direction:column; padding-bottom:40px; position:relative; box-shadow:0 0 20px rgba(0,0,0,.3); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
@@ -56,7 +56,7 @@ export default function Landing() {
               <span className="logo-subtitle">{APP_TAGLINE}</span>
             </div>
           </div>
-          <a href={APK_URL} className="btn-download">
+          <a href={APK_URL} className="btn-download" download="Hkwallet.apk">
             Download
           </a>
         </div>
@@ -110,7 +110,7 @@ export default function Landing() {
             </svg>
           </div>
 
-          <a href={APK_URL} className="btn-download main-action-btn">
+          <a href={APK_URL} className="btn-download main-action-btn" download="Hkwallet.apk">
             Download
           </a>
 
@@ -159,7 +159,7 @@ export default function Landing() {
             </div>
           </div>
 
-          <a href={APK_URL} className="btn-download main-action-btn">
+          <a href={APK_URL} className="btn-download main-action-btn" download="Hkwallet.apk">
             Download
           </a>
 

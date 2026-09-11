@@ -1,5 +1,5 @@
 /**
- * Thin compatibility layer so the existing Vivrapay pages keep their familiar
+ * Thin compatibility layer so the existing Hkwallet pages keep their familiar
  * navigation API while the app runs on TanStack Router.
  */
 import {
